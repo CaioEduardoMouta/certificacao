@@ -1,8 +1,10 @@
-class Pessoa {
+package br.com.alura.certificacao;
+
+class Person {
     static int x = 0;
 
     public static void setX(int x) {
-        Pessoa.x = x;
+        Person.x = x;
     }
 
     int y = 0;
