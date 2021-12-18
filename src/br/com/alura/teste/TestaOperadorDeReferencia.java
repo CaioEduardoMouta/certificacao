@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.teste;
 
 public class TestaOperadorDeReferencia {
     public static void main(String[] args) {

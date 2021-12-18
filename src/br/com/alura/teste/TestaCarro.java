@@ -1,5 +1,7 @@
-package br.com.alura;
+package br.com.alura.teste;
 
+
+import br.com.alura.Carro;
 
 public class TestaCarro {
     public static void main(String[] args) {

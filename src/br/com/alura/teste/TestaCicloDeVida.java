@@ -1,4 +1,6 @@
-package br.com.alura;
+package br.com.alura.teste;
+
+import br.com.alura.Carro;
 
 class Carros {
     Carro c1;
