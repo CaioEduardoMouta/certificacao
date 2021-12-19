@@ -1,6 +1,5 @@
 package br.com.alura.teste;
 
-import br.com.alura.Carro;
 
 public class TestaStringBufferEBuilder {
     public static void main(String[] args) {
@@ -16,7 +15,6 @@ public class TestaStringBufferEBuilder {
         sb3.append(" e alura e casa do Código");
         sb3.append('x');
         sb3.append(sb);
-        sb3.append(new Carro());
         System.out.println(sb3);
 
         StringBuilder sb4 = new StringBuilder("CaioEduardo");

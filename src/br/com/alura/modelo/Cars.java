@@ -1,11 +1,12 @@
-package br.com.alura;
+package br.com.alura.modelo;
 
-class Carro {
+class Cars {
+
 
     String modelo;
     int ano;
 
-    Carro() {
+    Cars() {
        ano = 2014;
     }
 

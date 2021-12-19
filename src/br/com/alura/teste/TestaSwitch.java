@@ -3,8 +3,9 @@ package br.com.alura.teste;
 public class TestaSwitch {
     public static void main(String[] args) {
         int opcao = 3;
-        switch (opcao) {
-            case 1:
+        final int variavel = 1;
+        switch (2) {
+            case variavel:
             System.out.println("Primeira Opção");
             break;
             case 2:
@@ -13,6 +14,7 @@ public class TestaSwitch {
             case 3:
             System.out.println("Terceira Opção");
             default:
+                System.out.println("Padrão");
         }
     }
 }
