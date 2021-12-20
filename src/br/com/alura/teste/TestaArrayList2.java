@@ -24,5 +24,26 @@ public class TestaArrayList2 {
         for(String nome: nomes) {
             System.out.println(nome);
         }
+
+        Client Caio = new Client();
+        Caio.nome = "Mouta";
+
+        ArrayList<Client> clients = new ArrayList<>();
+
+        clients.add(Caio);
+
+        System.out.println(Caio.nome);
+        System.out.println(clients.get(0).nome);
+
+        Caio.nome = "Carrazedo";
+
+        System.out.println(Caio.nome);
+        System.out.println(clients.get(0).nome);
+
+
+
+
+
+
     }
 }
