@@ -13,11 +13,15 @@ public class Testalacos2 {
 //        }
 
         for(int i = 0; i < 4; i++) {
-            switch (i) {
+            System.out.println("Antes do Switch");
+           caio: switch (i) {
                 case 0:
                 case 1:
                     System.out.println("Caso" + i);
-                    break;
+                    for(int j = 0; j < 3; j++) {
+                        System.out.println(j);
+                        if(j==1) break;
+                    }
                 case 2:
                     System.out.println("Certo " + i);
                     continue;
@@ -26,11 +30,13 @@ public class Testalacos2 {
                     break;
                 default:
                     System.out.println("Estranho");
+                    break;
             }
+            System.out.println("Estou apos o switch");
         }
 
-        System.out.println();
 
+        System.out.println();
         for(int j = 1; j < 10; j++) {
             if(j == 8) break;
             if(j == 5) continue;
