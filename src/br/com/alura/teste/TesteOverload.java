@@ -66,7 +66,7 @@ public class TesteOverload {
     public static void main(String[] args) {
 
         new Overloader().metodo6("Caio","Mouta");
-        new Overloader().metodo6(new Object(), new Object);
+        new Overloader().metodo6(new Object(), new Object());
         new Overloader().metodo6("Mouta", new Object());
 
 
