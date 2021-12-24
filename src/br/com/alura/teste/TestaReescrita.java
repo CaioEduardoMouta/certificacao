@@ -2,17 +2,34 @@ package br.com.alura.teste;
 
 import java.io.IOException;
 
-interface G {
-    void x();
-}
-
-class H implements G {
-    public void x(){
-
+class J{
+    public void metodo() {
+        System.out.println("a");
+        this.metodo2();
+    }
+    public void metodo2() {
+        System.out.println("metodo 2 do pai");
     }
 }
+
+class H extends J {
+    public void metodo() {
+        System.out.println("b");
+        super.metodo();
+    }
+    public void metodo2() {
+        System.out.println("c");
+        metodo();
+        super.metodo();
+    }
+
+    public static void main(String[] args) {
+        new H().metodo2();
+    }
+}
+
 class Veiculo {
-    public void liga() throws IOException {
+     void liga() throws IOException {
         System.out.println("O veiculo esta sendo ligado");
     }
 }
@@ -40,15 +57,19 @@ class FabricaDeVeiculo {
 }
 
 class FabricaHexaDroid {
-        Veiculo fabrica() {
-            return new HexaDroid()
+        HexaDroid fabrica() {
+            return new HexaDroid();
         }
 }
 
-public class TestaReescrita {
+class TestaReescrita {
+    static void metodo(Veiculo v) throws IOException {
+        v.liga();
+    }
 
     public static void main(String[] args) throws IOException{
-        Veiculo h1 = new FabricaHexaDroid().fabrica();
-        h1.liga();
+        metodo(new HexaDroid());
+        metodo(new Veiculo());
+        metodo(new Helicoptero());
     }
 }
