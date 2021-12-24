@@ -6,6 +6,11 @@ public class Endereco {
     String numero;
     String bairro;
 
+    protected Endereco(String rua) {
+        super();
+    }
 
+    protected Endereco() {
+    }
 }
 
