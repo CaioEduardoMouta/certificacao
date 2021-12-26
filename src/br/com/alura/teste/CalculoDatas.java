@@ -2,6 +2,9 @@ package br.com.alura.teste;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class CalculoDatas {
 
@@ -19,6 +22,19 @@ public class CalculoDatas {
 
         long segundos = Duration.between(m1, m2).getSeconds();
         System.out.println(segundos);
+
+        LocalDate aniversario = LocalDate.of(1993,7,16);
+        LocalDate agora = LocalDate.now();
+
+        System.out.println(ChronoUnit.YEARS.between(aniversario,agora));
+        System.out.println(ChronoUnit.MONTHS.between(aniversario,agora));
+        System.out.println(ChronoUnit.DAYS.between(aniversario,agora));
+
+        Period tempoDeVida = Period.between(aniversario,agora);
+        System.out.println(tempoDeVida.getYears());
+        System.out.println(tempoDeVida.getMonths());
+        System.out.println(tempoDeVida.getDays());
+
 
     }
 }
